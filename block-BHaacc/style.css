@@ -1,0 +1,533 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* font-family: 'Catamaran', sans-serif;
+font-family: 'Oswald', sans-serif; */
+
+/* custom css */
+
+/* general */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* header */
+
+header {
+
+    background: linear-gradient(to right, rgb(63, 129, 205, 0.6), rgb(140, 243, 147, 0.6)), url(./assets/home-bg.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 700px;
+}
+
+.top {
+    padding: 24px 0;
+}
+
+.top a {
+    color: white;
+}
+
+.brand {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.top-nav {
+    margin-right: 200px;
+    margin-top: 10px;
+}
+
+.top-nav a {
+    margin-left: 24px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.icon {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.icon a {
+    margin-left: 20px;
+}
+
+.right-nav {
+    padding: 10px;
+    width: 100px;
+    height: 20px;
+    background-color: red;
+    border-radius: 24px;
+}
+
+.right-nav a {
+    padding: 8px;
+}
+
+/* hero */
+
+.hero {
+    margin-top: 150px;
+    color: white;
+}
+
+.hero-box {
+    width: 40%;
+}
+
+.hero h1 {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.hero-nav {
+    width: 100px;
+    height: 28px;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 8px 10px 4px 10px;
+    vertical-align: text-bottom;
+}
+
+.hero-nav a {
+    color: white;
+    padding: 5px;
+}
+
+.contact {
+    font-size: 16px;
+    margin-left: 12px;
+    padding-top: 10px;
+}
+
+.contact p {
+    margin-top: 10px;
+}
+
+/* main */
+
+/* hero-text */
+
+.hero-section {
+    margin: 80px 0;
+}
+
+.hero-text {
+    flex: 0 1 32%;
+    margin-top: 80px;
+}
+
+.hero-text h2 {
+    font-size: 28px;
+    font-family: 'Oswald';
+}
+
+.dash {
+    width: 10px;
+    height: 10px;
+    background-color: grey;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+.hero-text p {
+    color: grey;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* hero graph */
+
+.graph {
+    flex: 0 1 28%;
+    margin-top: 80px;
+}
+
+.line {
+    margin-top: 15px;
+}
+
+.web-hr {
+    width: 85%;
+    background-color: black;
+    margin-left: 0;
+    height: 2px;
+}
+
+.photo-hr {
+    width: 90%;
+    background-color: black;
+    margin-left: 0;
+    height: 2px;
+}
+
+.content-hr {
+    width: 75%;
+    background-color: black;
+    margin-left: 0;
+    height: 2px;
+}
+
+.cms-hr {
+    width: 70%;
+    background-color: black;
+    margin-left: 0;
+    height: 2px;
+}
+
+.bar {
+    font-family: 'Catamaran';
+}
+
+/* hero-image */
+
+.hero-image {
+    flex: 0 1 30%;
+}
+
+.hero-image img {
+    height: 300px;
+}
+
+/* blog */
+
+.blog {
+    background-color: #efefef;
+}
+
+.blog h3 {
+    font-size: 32px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.dot {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.blog-box {
+    padding-bottom: 30px;
+}
+
+.p-box {
+    flex: 0 1 47%;
+    background-color: white;
+}
+
+.clock {
+    height: 5px;
+    color: red;
+}
+
+.c-box-1 {
+    flex: 0 1 48%;
+}
+
+
+.c-box-2 {
+    flex: 0 1 48%;
+    padding-top: 50px;
+}
+
+.c-box-2 h4 {
+    font-size: 24px;
+    font-family: 'Catamaran';
+    margin-bottom: 10px;
+}
+
+.c-box-2 .para-2 {
+    color: grey;
+    margin-bottom: 40px;
+}
+
+.para-1 {
+    font-size: 12px;
+    color: red;
+    margin-bottom: 20px;
+}
+
+.c-box-2 a {
+    color: white;
+    padding: 8px 15px 10px 15px;
+    width: 120px;
+    height: 20px;
+    background-color: grey;
+    border-radius: 24px;
+}
+
+/* section our work */
+
+.work h5 {
+    font-size: 32px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.work-box-1 {
+    margin-bottom: 40px;
+}
+
+.work-box-c {
+    width: 23%;
+}
+
+/* section contact */
+
+.contact-us {
+    background: linear-gradient(to right, rgb(3, 3, 249, 0.5), rgb(0, 128, 0, 0.5));
+    padding-bottom: 80px;
+}
+
+.contact-us h5 {
+    font-size: 32px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.contact-p-box-1 {
+    width: 55%;
+}
+
+.name {
+    width: 75%;
+    background-color: white;
+    padding: 10px 170px 10px 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    color: grey;
+}
+
+.requirment {
+    width: 114%;
+    height: 200px;
+    background-color: white;
+    border-radius: 8px;
+    margin: 10px 0 30px 0;
+    padding: 10px;
+    color: grey;
+}
+
+.contact-p-box-1 a {
+    padding: 10px 24px;
+    width: 12px;
+    background-color: #cf3732;
+    color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.map {
+    width: 35%;
+}
+
+.map-1 {
+    margin-left: 100px;
+}
+
+/* footer */
+
+footer{
+    background: linear-gradient(to right, rgb(128, 128, 128), rgb(10, 10, 10));
+}
+.footer{
+   padding: 60px 0;
+   color: white;
+}
+.footer p{
+    line-height: 1.5;
+}
+.f-article{
+    width: 40%;
+}
+h5{
+    font-size: 30px;
+    font-family: 'Catamaran';
+    margin-bottom: 10px;
+}
+.f-nav{
+    width: 19%;
+}
+.f-nav a{
+    color: white;
+    margin: 10px 0;
+}
+.nav-f{
+    padding: 5px 0;
+}
+.last{
+    padding: 50px 0;
+    color: white;
+}
+.f-icon a{
+    color: white;
+    margin-left: 20px;
+}
+.call{
+    margin-left: 400px;
+}
+.f-icon{
+    margin-left: 80px;
+}
